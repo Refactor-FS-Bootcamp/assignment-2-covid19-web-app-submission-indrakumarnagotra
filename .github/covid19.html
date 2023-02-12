@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="covid19.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./istockphoto-1366654397-612x612.jpg" alt="logo">
+                    <span>Covid - 19</span>
+                </div>
+                <div class="links">
+                    <a href="#" class="nav-btn active">Overview</a>
+                    <a href="#" class="nav-btn">Contsgion</a>
+                    <a href="#" class="nav-btn">Symptoms</a>
+                    <a href="#" class="nav-btn">Prevention</a>
+                    <a href="#" class="nav-btn">Contact</a>
+
+                </div>
+
+            </div>
+            <div class="main">
+                <span>
+                    Covid-19 Alert
+                </span>
+                <p class="heading">Getting Vaccinated lets you do more of the things you love.</p>
+                <p class="para">Getting Vaccinated against covid-19 .</p>
+                    <button>Let us Help</button>
+
+            </div>
+            <div class="image">
+                <img src="./istockphoto-1217103573-612x612.jpg" alt="main_img">
+            </div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="feb fa-facebook"></i></a>
+            <a href="#"><i class="feb fa-instagram"></i></a>
+                <a href="#"><i class="feb fa-twitter"></i></a>
+                    <a href="#"><i class="feb fa-youtube"></i></a>
+
+                    
+                
+            </section>
+        
+    </section>
+    <script>
+        const nav_btns = document.querySelectorAll('.nav-btn');
+        nav_btns.forEach((btn) => {
+            btn.addEventListner('click', () => {
+                nav_btns.forEach((button) => button.classList.remove('active'));
+                btn.classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
